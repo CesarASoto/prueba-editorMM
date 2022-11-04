@@ -3,6 +3,8 @@ const $ = (selector) => document.querySelector(selector);
 //variables
 
 let body = document.body;
+let header = $('header');
+let firstContainer =$('.firstContainer')
 let imgSection = $('#imgSection');
 let txtSection = $('#txtSection');
 let contMeme = $('.container');
@@ -20,6 +22,12 @@ let resetFiltersBtn = $('#resetBtn');
 let noOutlineBtn = $('#noOutlineBtn');
 let outlineWhiteBtn = $('#outlineWhiteBtn');
 let outlineDarkBtn = $('#outlineDarkBtn');
+
+//modal
+
+let closeModal = $('.closeModal');
+
+let controlPanel = $('#controlPanel');
 
 //Checkbox
 let ckbTopTxt = $('#ckbTopTxt');
@@ -63,19 +71,37 @@ let alingTxtRightBtn = $('#aTxtRight');
 //functions
 
 //Header Buttons
+
 let changeIPanel = ()=>{
-    if(imgSection.style.display = 'block'){
-        txtSection.style.display = 'none'
-    } else {
-        txtSection.style.display = 'block'
+    
+    body.classList.contains('closeIModal')
+    if(body.classList.contains('closeIModal')){
+        body.classList.remove('closeIModal')
+        body.classList.remove('closeTModal')
+        body.classList.remove('closeAside')
+    } else{
+        body.classList.remove('closeIModal')
+        body.classList.remove('closeAside')
+        
     }
 };
 
+closeModal.addEventListener('click', ()=>{
+    body.classList.contains('closeAside')
+    body.classList.toggle('closeAside')
+  
+})
+
 let changeTPanel = ()=>{
-    if(txtSection.style.display = 'block'){
-        imgSection.style.display = 'none'
-    } else {
-        imgSection.style.display = 'block'
+    
+    body.classList.contains('closeTModal')
+    if(body.classList.contains('closeTModal')){
+        body.classList.remove('closeAside')
+        body.classList.add('closeTModal')
+    } else{
+        body.classList.add('closeIModal')
+        body.classList.add('closeTModal')
+        body.classList.remove('closeAside')
     }
 };
 

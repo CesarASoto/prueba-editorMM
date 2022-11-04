@@ -44,6 +44,24 @@ body {
     background-color: var(--bGrLightMInputRange);
 }
 
+/* cerrar modal */
+
+.closeIModal #imgSection{
+    display: none;
+}
+.closeTModal #txtSection{
+    display: block;
+}
+.closeAside #controlPanel{
+    display: none;
+}
+
+.closeAside header{
+    width: 100%;
+}
+.closeAside .firstContainer{
+    width: 100%;
+}
 /* Hidden Class for JS */
 
 .TextOculto #topTxt{
@@ -240,10 +258,10 @@ aside {
     line-height: 2em;
     font-size: 14px;
     height: 100vh;
+    
 }
-
-#imgSection {
- 
+.modalContend{
+    cursor: pointer;
 }
 
 #txtSection {
@@ -508,6 +526,8 @@ textarea:hover{
      line-height: 1em;
      height: 100vh;
      font-size: 11px;
+     z-index: 1;
+     width: 60%;
     }
     #imgSection {
      line-height: 1.8;
@@ -531,6 +551,8 @@ textarea:hover{
     }
  }
 
+
+
  @media (max-width: 750px) and (min-width: 450px) {
     
     header{
@@ -543,6 +565,8 @@ textarea:hover{
      line-height: 0.8em;
      height: 100vh;
      font-size: 8px;
+     
+     width: 100%;
     }
     #imgSection {
      line-height: 1.8;
@@ -589,9 +613,11 @@ textarea:hover{
         width: 100%;
     }
  }
+
+
  @media (max-width: 449px) and (min-width: 360px) {
     *{
-        font-size: 6px;
+        font-size: 8px;
     }
     header{
      height: 20vh;
