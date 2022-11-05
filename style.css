@@ -44,7 +44,7 @@ body {
     background-color: var(--bGrLightMInputRange);
 }
 
-/* cerrar modal */
+/* cerrar paneles modal */
 
 .closeIModal #imgSection{
     display: none;
@@ -52,6 +52,8 @@ body {
 .closeTModal #txtSection{
     display: block;
 }
+
+/* cerrar modal */
 .closeAside #controlPanel{
     display: none;
 }
@@ -62,6 +64,8 @@ body {
 .closeAside .firstContainer{
     width: 100%;
 }
+/* cerrar modal */
+
 /* Hidden Class for JS */
 
 .TextOculto #topTxt{
@@ -518,6 +522,14 @@ textarea:hover{
  @media (max-width: 1279px) and (min-width: 750px) {
     header{
      height: 20vh;
+     font-size: 30px;
+    }
+    .btnHeader{
+        font-size: 30px;
+    }
+    .container{
+        width: 70%;
+        height: 60%;
     }
     .firstContainer{
      height: 80vh;
@@ -556,7 +568,15 @@ textarea:hover{
  @media (max-width: 750px) and (min-width: 450px) {
     
     header{
-     height: 20vh;
+        height: 20vh;
+        font-size: 30px;
+    }
+    .btnHeader{
+           font-size: 30px;
+    }
+    .container{
+           width: 70%;
+           height: 60%;
     }
     .firstContainer{
      height: 80vh;
@@ -565,11 +585,15 @@ textarea:hover{
      line-height: 0.8em;
      height: 100vh;
      font-size: 8px;
-     
      width: 100%;
     }
     #imgSection {
      line-height: 1.8;
+     width: 100%;
+    }
+    #txtSection {
+    font-size: 4px;
+    width: 100%;
     }
     .backgroundContainer{
      display: flex;
@@ -589,27 +613,13 @@ textarea:hover{
      flex-direction: column;
     }
     input[type=color] {
-        -webkit-appearance: none;
-        background-color: transparent;
-        appearance: none;
-        border: none;
         height: 20px;
         width: 100%;
     }
     select {
-        background-color: var(--bGBtn);
-        padding: 3px;
-        border-radius: 3px;
-        color: var(--whiteColor);
-        text-transform: uppercase;
         width: 100%;
     }
     .contTextColor  {
-        display: flex;
-        background-color: var(--bGBtn);
-        align-items: center;
-        padding: 3px;
-        border-radius: 3px;
         width: 100%;
     }
  }
@@ -629,12 +639,15 @@ textarea:hover{
      line-height: 1em;
      height: 100vh;
      font-size: 8px;
+     width: 100%;
     }
     #imgSection {
      line-height: 1.8;
+     width: 100%;
     }
     #txtSection {
      font-size: 4px;
+     width: 100%;
     }
     .backgroundContainer{
      display: flex;
@@ -692,9 +705,14 @@ textarea:hover{
      line-height: 1em;
      height: 100vh;
      font-size: 8px;
+     width: 100%;
     }
     #imgSection {
      line-height: 1.8;
+     width: 100%;
+    }
+    #txtSection {
+     width: 100%;
     }
     .backgroundContainer{
      display: flex;

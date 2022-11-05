@@ -73,7 +73,6 @@ let alingTxtRightBtn = $('#aTxtRight');
 //Header Buttons
 
 let changeIPanel = ()=>{
-    
     body.classList.contains('closeIModal')
     if(body.classList.contains('closeIModal')){
         body.classList.remove('closeIModal')
@@ -82,18 +81,15 @@ let changeIPanel = ()=>{
     } else{
         body.classList.remove('closeIModal')
         body.classList.remove('closeAside')
-        
     }
 };
 
 closeModal.addEventListener('click', ()=>{
     body.classList.contains('closeAside')
     body.classList.toggle('closeAside')
-  
 })
 
 let changeTPanel = ()=>{
-    
     body.classList.contains('closeTModal')
     if(body.classList.contains('closeTModal')){
         body.classList.remove('closeAside')
@@ -412,3 +408,20 @@ noOutlineBtn.addEventListener('click', outlineNone);
 
 inpSpaced.addEventListener('input', spaced);
 
+let Bp4 = matchMedia('(max-width: 750px) and (min-width: 450px)')
+Bp4.addEventListener('change', ()=>{
+    body.classList.contains('closeAside')
+    body.classList.toggle('closeAside')
+})
+
+let Bp5 = matchMedia('(max-width: 449px) and (min-width: 360px)')
+Bp5.addEventListener('change', ()=>{
+    body.classList.contains('closeAside')
+    body.classList.toggle('closeAside')
+})
+
+let Bp6 = matchMedia('(max-width: 359px) and (min-width: 280px)')
+Bp6.addEventListener('change', ()=>{
+    body.classList.contains('closeAside')
+    body.classList.toggle('closeAside')
+})
