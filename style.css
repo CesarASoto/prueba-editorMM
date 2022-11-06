@@ -521,7 +521,7 @@ textarea:hover{
  
  @media (max-width: 1279px) and (min-width: 750px) {
     header{
-     height: 20vh;
+     height: 15vh;
      font-size: 30px;
     }
     .btnHeader{
@@ -532,7 +532,10 @@ textarea:hover{
         height: 60%;
     }
     .firstContainer{
-     height: 80vh;
+     height: 85vh;
+    }
+    .downloadBtn{
+        font-size: 30px;
     }
     aside {
      line-height: 1em;
@@ -578,10 +581,6 @@ textarea:hover{
     .btnHeader{
            font-size: 30px;
     }
-    .container{
-           width: 70%;
-           height: 60%;
-    }
     .firstContainer{
      height: 80vh;
     }
@@ -589,7 +588,7 @@ textarea:hover{
      line-height: 0.8em;
      height: 100vh;
      font-size: 8px;
-     width: 100%;
+     width: 60%;
     }
     .modalContend{
         width: 30px;
@@ -597,11 +596,9 @@ textarea:hover{
        }
     #imgSection {
      line-height: 1.8;
-     width: 100%;
     }
     #txtSection {
     font-size: 4px;
-    width: 100%;
     }
     .backgroundContainer{
      display: flex;
@@ -638,10 +635,21 @@ textarea:hover{
         font-size: 8px;
     }
     header{
-     height: 20vh;
+     height: 13vh;
+     font-size: 30px;
+    }
+    h1{
+    color: crimson;
     }
     .firstContainer{
-     height: 80vh;
+     height: 87vh;
+    }
+    .container{
+        width: 70%;
+        height: 60%;
+    }
+    .downloadBtn{
+        font-size: 30px;
     }
     aside {
      line-height: 1em;
@@ -650,16 +658,14 @@ textarea:hover{
      width: 100%;
     }
     .modalContend{
-        width: 25px;
-        height: 25px;
+        width: 50px;
+        height: 50px;
        }
     #imgSection {
      line-height: 1.8;
-     width: 100%;
     }
     #txtSection {
      font-size: 4px;
-     width: 100%;
     }
     .backgroundContainer{
      display: flex;
@@ -679,27 +685,12 @@ textarea:hover{
      flex-direction: column;
     }
     input[type=color] {
-        -webkit-appearance: none;
-        background-color: transparent;
-        appearance: none;
-        border: none;
-        height: 20px;
         width: 100%;
     }
     select {
-        background-color: var(--bGBtn);
-        padding: 3px;
-        border-radius: 3px;
-        color: var(--whiteColor);
-        text-transform: uppercase;
         width: 100%;
     }
     .contTextColor  {
-        display: flex;
-        background-color: var(--bGBtn);
-        align-items: center;
-        padding: 3px;
-        border-radius: 3px;
         width: 100%;
     }
  }
@@ -725,10 +716,6 @@ textarea:hover{
        }
     #imgSection {
      line-height: 1.8;
-     width: 100%;
-    }
-    #txtSection {
-     width: 100%;
     }
     .backgroundContainer{
      display: flex;
