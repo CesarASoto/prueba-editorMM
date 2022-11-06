@@ -259,6 +259,7 @@ aside {
 }
 .modalContend{
     cursor: pointer;
+    height: 30px;
 }
 
 #txtSection {
@@ -485,7 +486,7 @@ textarea:hover{
 @media (max-width: 1920px) and (min-width: 1370px) {
    
     aside {
-     line-height: 1.7em;
+     line-height: 1.5em;
      
      font-size: 17px;
     }
@@ -498,8 +499,13 @@ textarea:hover{
      line-height: 1.3em;
      font-size: 14px;
      }
-     .closeModal{
+     .modalContend{
+        position: relative;
+    }
+    .closeModal{
         font-size: 30px;
+        position: absolute;
+        bottom: 0;
     }
  }
  
@@ -527,8 +533,13 @@ textarea:hover{
      z-index: 1;
      width: 60%;
     }
+    .modalContend{
+        position: relative;
+    }
     .closeModal{
         font-size: 30px;
+        position: absolute;
+        bottom: 0;
     }
     #imgSection {
      line-height: 1.8;
@@ -578,8 +589,13 @@ textarea:hover{
      font-size: 8px;
      width: 60%;
     }
+    .modalContend{
+        position: relative;
+    }
     .closeModal{
         font-size: 30px;
+        position: absolute;
+        bottom: 0;
     }
     #imgSection {
      line-height: 1.8;
@@ -642,8 +658,13 @@ textarea:hover{
      font-size: 8px;
      width: 100%;
     }
+    .modalContend{
+        position: relative;
+    }
     .closeModal{
         font-size: 30px;
+        position: absolute;
+        bottom: 0;
     }
     #imgSection {
      line-height: 1.8;
@@ -701,8 +722,13 @@ textarea:hover{
      font-size: 8px;
      width: 100%;
     }
+    .modalContend{
+        position: relative;
+    }
     .closeModal{
-     font-size: 30px;
+        font-size: 30px;
+        position: absolute;
+        bottom: 0;
     }
     #imgSection {
      line-height: 1.8;

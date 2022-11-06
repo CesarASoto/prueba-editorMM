@@ -419,3 +419,13 @@ let cambio = (mql)=>{
 }
 bP5.addListener(cambio);
 cambio(bP5);
+
+let bP6 = matchMedia('(max-width: 359px)');
+
+let cambioF = (mql)=>{
+    mql.matches
+    ? body.classList.add('closeAside')
+    : body.classList.remove('closeAside')
+}
+bP6.addListener(cambioF);
+cambioF(bP6);
