@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Fuzzy Bubbles', cursive;
+
 }
 
 :root {
@@ -21,6 +22,7 @@
 body {
     
     position: relative;
+    min-height: 100vh;
 }
 
 /* Light Mode Styles */
@@ -145,9 +147,6 @@ body {
 
 header {
     width: 80%;
-/* 
-    height: 18%;
-     */
     height: 15vh;
      text-align: center;
     background-color: var(--bGHeader);
@@ -173,14 +172,10 @@ h1 {
 /* imagen meme */
 
 .firstContainer {
-    /* 
-    height: 82%;
-     */
     height: 85vh;
     width: 80%;
     background-color: var(--bGCont);
     color: var(--whiteColor);
-        
 }
 
 .mainSection {
@@ -195,11 +190,10 @@ h1 {
 
 .container {
     width: 40%;
-    height: 80%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
 }
 
 #topTxt{
@@ -261,23 +255,14 @@ aside {
     padding: 0px 20px;
     line-height: 2em;
     font-size: 14px;
-    height: 100vh;
-    
+    height: 100%;
 }
 .modalContend{
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
 #txtSection {
     display: none;
-   
 }
 
 input[type=text], [type=number]{
@@ -498,30 +483,19 @@ textarea:hover{
 /* Media Queris */
 
 @media (max-width: 1920px) and (min-width: 1370px) {
-    header{
-     height: 15vh;
-    }
-    .firstContainer{
-     height: 85vh;
-    }
+   
     aside {
-     line-height: 1.9em;
-     height: 100vh;
+     line-height: 1.7em;
+     
      font-size: 17px;
     }
 
  }
  
  @media (max-width: 1369px) and (min-width: 1280px) {
-    header{
-     height: 20vh;
-    }
-    .firstContainer{
-     height: 80vh;
-    }
+  
     aside {
      line-height: 1.3em;
-     height: 100vh;
      font-size: 14px;
      }
      .closeModal{
@@ -531,25 +505,24 @@ textarea:hover{
  
  @media (max-width: 1279px) and (min-width: 750px) {
     header{
-     height: 20vh;
      font-size: 30px;
+     height: 25vh;
     }
     .btnHeader{
-        font-size: 30px;
+     font-size: 30px;
+    }
+    .firstContainer {
+        height: 75vh;
     }
     .container{
         width: 70%;
         height: 60%;
     }
-    .firstContainer{
-     height: 80vh;
-    }
     .downloadBtn{
-        font-size: 30px;
+      font-size: 30px;
     }
     aside {
      line-height: 1em;
-     height: 100vh;
      font-size: 11px;
      z-index: 1;
      width: 60%;
@@ -584,21 +557,24 @@ textarea:hover{
  @media (max-width: 750px) and (min-width: 450px) {
     
     header{
-        height: 30vh;
-        font-size: 30px;
+     font-size: 22px;
+     height: 25vh;
     }
     h1{
-        color:aqua;
+     color:aqua;
         }
     .btnHeader{
-           font-size: 30px;
+     font-size: 22px;
     }
-    .firstContainer{
-     height: 70vh;
+    .firstContainer {
+        height: 75vh;
+    }
+    .container{
+        width: 70%;
+        height: 60%;
     }
     aside {
      line-height: 0.8em;
-     height: 100vh;
      font-size: 8px;
      width: 60%;
     }
@@ -630,7 +606,7 @@ textarea:hover{
     }
     input[type=color] {
         height: 20px;
-        width: 100%;
+        width: 20%;
     }
     select {
         width: 100%;
@@ -642,19 +618,18 @@ textarea:hover{
 
 
  @media (max-width: 449px) and (min-width: 360px) {
-    *{
-        font-size: 8px;
-    }
+ 
     header{
-     height: 13vh;
-     font-size: 30px;
+     font-size: 20px;
+     height: 25vh;
     }
     h1{
     color: crimson;
     }
-    .firstContainer{
-     height: 87vh;
+    .firstContainer {
+        height: 75vh;
     }
+
     .container{
         width: 70%;
         height: 60%;
@@ -664,7 +639,6 @@ textarea:hover{
     }
     aside {
      line-height: 1em;
-     height: 100vh;
      font-size: 8px;
      width: 100%;
     }
@@ -695,7 +669,7 @@ textarea:hover{
      flex-direction: column;
     }
     input[type=color] {
-        width: 100%;
+        width: 20%;
     }
     select {
         width: 100%;
@@ -705,27 +679,31 @@ textarea:hover{
     }
  }
  @media (max-width: 359px) {
-    *{
-        font-size: 8px;
-    }
     header{
-     height: 40vh;
-    }
-    h1{
-        color:gold;
+        font-size: 20px;
+        height: 25vh;
+       }
+       h1{
+           color:gold;
         }
-    .firstContainer{
-     height: 60vh;
-    }
+        .firstContainer {
+            height: 75vh;
+        }
+        .container{
+            width: 70%;
+            height: 60%;
+        }
+        .downloadBtn{
+            font-size: 20px;
+        }
     aside {
      line-height: 1em;
-     height: 100vh;
      font-size: 8px;
      width: 100%;
     }
     .closeModal{
-        font-size: 30px;
-       }
+     font-size: 30px;
+    }
     #imgSection {
      line-height: 1.8;
     }
@@ -747,7 +725,7 @@ textarea:hover{
      flex-direction: column;
     }
     input[type=color] {
-     width: 100%;
+     width: 15%;
     }
     select {
      width: 100%;
