@@ -502,7 +502,7 @@ textarea:hover{
      height: 100vh;
      font-size: 17px;
     }
-   
+
  }
  
  @media (max-width: 1369px) and (min-width: 1280px) {
@@ -541,6 +541,10 @@ textarea:hover{
      z-index: 1;
      width: 60%;
     }
+    .modalContend{
+        width: 30px;
+        height: 30px;
+       }
     #imgSection {
      line-height: 1.8;
     }
@@ -587,6 +591,10 @@ textarea:hover{
      font-size: 8px;
      width: 100%;
     }
+    .modalContend{
+        width: 30px;
+        height: 30px;
+       }
     #imgSection {
      line-height: 1.8;
      width: 100%;
@@ -641,6 +649,10 @@ textarea:hover{
      font-size: 8px;
      width: 100%;
     }
+    .modalContend{
+        width: 25px;
+        height: 25px;
+       }
     #imgSection {
      line-height: 1.8;
      width: 100%;
@@ -707,6 +719,10 @@ textarea:hover{
      font-size: 8px;
      width: 100%;
     }
+    .modalContend{
+        width: 15px;
+        height: 15px;
+       }
     #imgSection {
      line-height: 1.8;
      width: 100%;
