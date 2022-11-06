@@ -409,6 +409,17 @@ noOutlineBtn.addEventListener('click', outlineNone);
 inpSpaced.addEventListener('input', spaced);
 
 //queris
+let bP4 = matchMedia('(max-width: 750px) and (min-width: 450px)');
+
+let cambio1 = (mq)=>{
+    mq.matches
+    ? body.classList.add('closeAside')
+    : body.classList.remove('closeAside')
+}
+bP4.addListener(cambio1);
+cambio1(bP4);
+
+
 let bP5 = matchMedia('(max-width: 449px) and (min-width: 360px)');
 
 let cambio = (mql)=>{
