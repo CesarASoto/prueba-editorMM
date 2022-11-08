@@ -410,9 +410,10 @@ inpSpaced.addEventListener('input', spaced);
 
 //queris
 
-let bP5 = matchMedia('(max-width: 449px) and (min-width: 360px)');
+let bP5 = matchMedia('(max-width: 749px)');
 
 let cambio = (mql)=>{
+    console.log(mql.matches)
     mql.matches
     ? body.classList.add('closeAside')
     : body.classList.remove('closeAside')

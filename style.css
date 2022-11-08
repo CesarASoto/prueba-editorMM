@@ -355,7 +355,7 @@ select:hover{
     background-color: var(--bGBtn);
     align-items: center;
     gap: 6px;
-    padding: 3px;
+   
     border-radius: 3px;
 }
 
@@ -484,15 +484,20 @@ textarea:hover{
 
 /* Media Queris */
 
-@media (max-width: 1920px) and (min-width: 1370px) {
+@media (min-width: 1370px) {
     aside {
      line-height: 1.5em;
      font-size: 17px;
     }
+    .btnHeader{
+        font-size: 20px;
+       }
  }
  
  @media (max-width: 1369px) and (min-width: 1280px) {
-  
+    .btnHeader{
+        font-size: 20px;
+       }
     aside {
      line-height: 1.3em;
      font-size: 14px;
@@ -509,11 +514,17 @@ textarea:hover{
  
  @media (max-width: 1279px) and (min-width: 750px) {
     header{
-     font-size: 30px;
+   
      height: 25vh;
+     text-align: start;
+    }
+    .headerButtons{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .btnHeader{
-     font-size: 30px;
+     font-size: 15px;
     }
     .firstContainer {
         height: 75vh;
@@ -542,12 +553,12 @@ textarea:hover{
     #imgSection {
      line-height: 1.8;
     }
-    .backgroundContainer{
+/*     .backgroundContainer{
      display: flex;
      flex-direction: column;
      gap: 10px;
-    }
-    .contFontSize{
+    } */
+/*     .contFontSize{
      display: flex;
      flex-direction: column;
     }
@@ -558,80 +569,10 @@ textarea:hover{
     .contOutlineBtns{
      display: flex;
      flex-direction: column;
-    }
+    } */
  }
 
-
-
- @media (max-width: 750px) and (min-width: 450px) {
-    
-    header{
-     font-size: 22px;
-     height: 25vh;
-    }
-    h1{
-     color:aqua;
-        }
-    .btnHeader{
-     font-size: 22px;
-    }
-    .firstContainer {
-        height: 75vh;
-    }
-    .container{
-        width: 70%;
-        height: 60%;
-    }
-    aside {
-     line-height: 0.8em;
-     font-size: 8px;
-     width: 60%;
-    }
-    .modalContend{
-        position: relative;
-    }
-    .closeModal{
-        font-size: 30px;
-        position: absolute;
-        bottom: 0;
-    }
-    #imgSection {
-     line-height: 1.8;
-    }
-    #txtSection {
-    font-size: 4px;
-    }
-    .backgroundContainer{
-     display: flex;
-     flex-direction: column;
-     gap: 10px;
-    }
-    .contFontSize{
-     display: flex;
-     flex-direction: column;
-    }
-    .contTextColorBackgr{
-     display: flex;
-     flex-direction: column;
-    }
-    .contOutlineBtns{
-     display: flex;
-     flex-direction: column;
-    }
-    input[type=color] {
-        height: 20px;
-        width: 20%;
-    }
-    select {
-        width: 100%;
-    }
-    .contTextColor  {
-        width: 100%;
-    }
- }
-
-
- @media (max-width: 449px) and (min-width: 360px) {
+ @media (max-width: 749px){
  
     header{
      font-size: 20px;
@@ -668,27 +609,14 @@ textarea:hover{
      line-height: 1.8;
     }
     #txtSection {
-     font-size: 4px;
+     font-size: 10px;
     }
-    .backgroundContainer{
-     display: flex;
-     flex-direction: column;
-     gap: 10px;
-    }
-    .contFontSize{
-     display: flex;
-     flex-direction: column;
-    }
-    .contTextColorBackgr{
-     display: flex;
-     flex-direction: column;
-    }
-    .contOutlineBtns{
-     display: flex;
-     flex-direction: column;
-    }
+.backgroundColorContainer{
+   width: 20%;
+}
+
     input[type=color] {
-        width: 20%;
+        width: 15%;
     }
     select {
         width: 100%;
@@ -697,7 +625,7 @@ textarea:hover{
         width: 100%;
     }
  }
- @media (max-width: 359px) {
+/*  @media (max-width: 359px) {
     header{
         font-size: 20px;
         height: 25vh;
@@ -731,30 +659,11 @@ textarea:hover{
     #imgSection {
      line-height: 1.8;
     }
-    .backgroundContainer{
-     display: flex;
-     flex-direction: column;
-     gap: 10px;
-    }
-    .contFontSize{
-     display: flex;
-     flex-direction: column;
-    }
-    .contTextColorBackgr{
-     display: flex;
-     flex-direction: column;
-    }
-    .contOutlineBtns{
-     display: flex;
-     flex-direction: column;
-    }
-    input[type=color] {
-     width: 15%;
-    }
+
     select {
      width: 100%;
     }
     .contTextColor  {
      width: 100%;
     }
- }
+ } */
