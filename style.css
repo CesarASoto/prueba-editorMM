@@ -110,13 +110,14 @@ body {
     background-color: transparent !important;
     position: absolute;
     top: 0%;
-    width: 90%;
+    width: 100%;
+    z-index: 1;
 }
 .trasparentTxtBG .bottomText{
     background-color: transparent !important;
     position: absolute;
     bottom: 0;
-    width: 90%;
+    width: 100%;
 }
 .trasparentTxtBG .container{
     position: relative;
@@ -484,13 +485,10 @@ textarea:hover{
 /* Media Queris */
 
 @media (max-width: 1920px) and (min-width: 1370px) {
-   
     aside {
      line-height: 1.5em;
-     
      font-size: 17px;
     }
-
  }
  
  @media (max-width: 1369px) and (min-width: 1280px) {
@@ -530,7 +528,7 @@ textarea:hover{
     aside {
      line-height: 1em;
      font-size: 11px;
-     z-index: 1;
+     z-index: 2;
      width: 60%;
     }
     .modalContend{
